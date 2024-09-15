@@ -34,9 +34,7 @@ jobs:
         run: ./bin/download-compiler
       - name: Build site
         run: gleam run
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+        
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
